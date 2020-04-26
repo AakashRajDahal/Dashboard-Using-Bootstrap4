@@ -55,6 +55,30 @@ h6 {
     font-weight: 600;
 }
 
+.primary {
+    color: $primary;
+}
+
+.success {
+    color: $success;
+}
+
+.info {
+    color: $info;
+}
+
+.danger {
+    color: $danger;
+}
+
+.warning {
+    color: $warning;
+}
+
+.grey {
+    color: $grey
+}
+
 a,
 a:hover,
 a:focus {
@@ -66,6 +90,38 @@ a:focus {
 i,
 span {
     display: inline-block;
+}
+
+
+/* Equal Columns for Bootstrap */
+
+.row.equal-cols {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.equal-cols:before,
+.row.equal-cols:after {
+    display: block;
+}
+
+.row.equal-cols>[class*='col-'] {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.row.equal-cols>[class*='col-']>* {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .eCard {

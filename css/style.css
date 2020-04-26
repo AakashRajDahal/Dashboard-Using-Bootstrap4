@@ -39,6 +39,30 @@ h6 {
   font-weight: 600;
 }
 
+.primary {
+  color: #3498db;
+}
+
+.success {
+  color: #2eb872;
+}
+
+.info {
+  color: #495BFC;
+}
+
+.danger {
+  color: #FF3838;
+}
+
+.warning {
+  color: #FF9D00;
+}
+
+.grey {
+  color: #929292;
+}
+
 a,
 a:hover,
 a:focus {
@@ -51,6 +75,36 @@ a:focus {
 i,
 span {
   display: inline-block;
+}
+
+/* Equal Columns for Bootstrap */
+.row.equal-cols {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row.equal-cols:before,
+.row.equal-cols:after {
+  display: block;
+}
+
+.row.equal-cols > [class*='col-'] {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.row.equal-cols > [class*='col-'] > * {
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
 }
 
 .eCard, .eCardSuccess {
@@ -285,6 +339,35 @@ a[data-toggle="collapse"] {
   .sidebarCollapse span {
     display: none;
   }
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+  .col-xs-12 {
+    margin-bottom: 10px;
+  }
+}
+
+.row.row-grid [class*="col-"] + [class*="col-"] {
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .row.row-grid [class*="col-md-"] + [class*="col-md-"] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .row.row-grid [class*="col-sm-"] + [class*="col-sm-"] {
+    margin-top: 0;
+  }
 }
 
 /* ------------------------------
@@ -354,6 +437,59 @@ a[data-toggle="collapse"] {
   padding: 5px 20px;
 }
 
+td {
+  height: 100px;
+  vertical-align: middle !important;
+}
+
+tr,
+td {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.tableHeading {
+  color: #929292;
+  font-size: 0.9em;
+}
+
+.tableLgText {
+  font-size: 2em;
+}
+
+.tableImage {
+  width: 48px;
+  border-radius: 50%;
+  float: right;
+}
+
+.pill, .successPill, .warningPill, .infoPill, .dangerPill {
+  background-color: white;
+  font-size: 0.8em;
+  padding: 5px 15px 3px 15px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.successPill {
+  background: #ebfaf2;
+  color: #2eb872;
+}
+
+.warningPill {
+  background: #ffebcc;
+  color: #FF9D00;
+}
+
+.infoPill {
+  background: #e0e3fe;
+  color: #495BFC;
+}
+
+.dangerPill {
+  background: #ffd1d1;
+  color: #FF3838;
+}
+
 /* Dashboard Stuff */
 .dashboard {
   margin-top: 3em;
@@ -385,35 +521,5 @@ a[data-toggle="collapse"] {
   font-weight: bold;
   font-size: 1.5em;
   margin-top: 0.5em;
-}
-
-/* Equal Columns for Bootstrap */
-.row.equal-cols {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.row.equal-cols:before,
-.row.equal-cols:after {
-  display: block;
-}
-
-.row.equal-cols > [class*='col-'] {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-}
-
-.row.equal-cols > [class*='col-'] > * {
-  -ms-flex: 1 1 auto;
-  -webkit-box-flex: 1;
-          flex: 1 1 auto;
 }
 /*# sourceMappingURL=style.css.map */

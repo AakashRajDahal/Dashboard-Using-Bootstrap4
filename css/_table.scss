@@ -1,0 +1,56 @@
+td {
+    height: 100px;
+    vertical-align: middle !important;
+}
+
+tr,
+td {
+    border-bottom: 1px solid $silver;
+}
+
+.tableHeading {
+    color: $grey;
+    font-size: 0.9em;
+}
+
+.tableLgText {
+    font-size: 2em;
+}
+
+.tableImage {
+    width: 48px;
+    border-radius: 50%;
+    float: right;
+}
+
+.pill {
+    background-color: lighten($color: $primary, $amount: 50);
+    font-size: 0.8em;
+    padding: 5px 15px 3px 15px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.successPill {
+    @extend .pill;
+    background: lighten($color: $success, $amount: 50);
+    color: $success;
+}
+
+.warningPill {
+    @extend .pill;
+    background: lighten($color: $warning, $amount: 40);
+    color: $warning;
+}
+
+.infoPill {
+    @extend .pill;
+    background: lighten($color: $info, $amount: 30);
+    color: $info;
+}
+
+.dangerPill {
+    @extend .pill;
+    background: lighten($color: $danger, $amount: 30);
+    color: $danger;
+}
