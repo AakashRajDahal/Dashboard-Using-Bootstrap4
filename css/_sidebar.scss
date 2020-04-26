@@ -15,8 +15,8 @@
     transition: all 0.3s;
     box-shadow: 3px 0px 15px $silver;
     z-index: 999;
-    position: fixed;
     min-height: 100vh;
+    position: fixed;
 
     &.active {
         min-width: 80px;
@@ -161,6 +161,11 @@ a {
     padding: 0px 40px;
     min-height: 100vh;
     margin-left: 250px;
+    transition: 0.3s all;
+
+    &.active {
+        margin-left: 80px;
+    }
 }
 
 

@@ -21,11 +21,21 @@ $grey: #929292;
 $silver: #e3e3e3;
 $white: #ffffff;
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     background: $bg;
-    margin: 0;
-    padding: 0;
 }
 
 p {
@@ -53,12 +63,6 @@ a:focus {
     transition: all 0.3s;
 }
 
-.nothing {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 i,
 span {
     display: inline-block;
@@ -69,12 +73,11 @@ span {
     background-color: $white;
     box-shadow: 0px 3px 15px $silver;
     border-radius: 10px;
-
 }
 
 .eCardSuccess {
     @extend .eCard;
     background-color: $success;
     color: $white !important;
-
+    box-shadow: 0px 10px 15px $silver;
 }

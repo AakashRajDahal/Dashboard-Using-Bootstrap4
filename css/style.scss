@@ -1,3 +1,39 @@
 @import './global';
 @import './sidebar';
-@import './forms'
+@import './forms';
+
+
+/* Dashboard Stuff */
+
+.dashboard {
+    margin-top: 3em;
+}
+
+.statBig {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.statIcon {
+    color: $grey;
+    margin-right: 0.3em;
+}
+
+.statDesc {
+    margin-left: 0.2em;
+}
+
+.greenUp {
+    color: $success;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+
+}
+
+.redDown {
+    color: $danger;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
