@@ -84,6 +84,8 @@ span {
   -webkit-box-shadow: 3px 0px 15px #e3e3e3;
           box-shadow: 3px 0px 15px #e3e3e3;
   z-index: 999;
+  position: fixed;
+  min-height: 100vh;
 }
 
 .sidebar.active {
@@ -212,9 +214,9 @@ a[data-toggle="collapse"] {
 
 .content {
   width: 100%;
-  position: relative;
   padding: 0px 40px;
   min-height: 100vh;
+  margin-left: 250px;
 }
 
 /* ---------------------------------------------------
