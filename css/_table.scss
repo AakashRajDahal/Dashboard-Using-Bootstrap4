@@ -8,6 +8,10 @@ td {
     border-bottom: 1px solid $silver;
 }
 
+.tableTitle {
+    font-size: 1.5em;
+}
+
 .tableHeading {
     color: $grey;
     font-size: 0.9em;
@@ -23,10 +27,15 @@ td {
     float: right;
 }
 
+.tableSort {
+    display: flex;
+    justify-content: space-between;
+}
+
 .pill {
     background-color: lighten($color: $primary, $amount: 50);
     font-size: 0.8em;
-    padding: 5px 15px 3px 15px;
+    padding: 5px 15px;
     border-radius: 100px;
     font-weight: bold;
 }
@@ -53,4 +62,10 @@ td {
     @extend .pill;
     background: lighten($color: $danger, $amount: 30);
     color: $danger;
+}
+
+@media (max-width: 768px) {
+    .searchTable {
+        display: none;
+    }
 }
