@@ -6,4 +6,7 @@ It also has its own simple Design System. It is still a work in progress and I w
 
 Feel free to use this Template and STAR if you loved it. Thanks. 
 
+![Screenshot](images/screenshot.PNG?raw=true "Screenshot")
+
+
 Demo Link for the lazy people: https://aakashrajdahal.github.io/Dashboard-Using-Bootstrap4/ 
