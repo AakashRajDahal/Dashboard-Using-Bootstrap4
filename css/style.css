@@ -38,6 +38,17 @@ a:focus {
   transition: all 0.3s;
 }
 
+.nothing {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+i,
+span {
+  display: inline-block;
+}
+
 .eCard, .eCardSuccess {
   padding: 40px;
   background-color: #ffffff;
@@ -49,17 +60,6 @@ a:focus {
 .eCardSuccess {
   background-color: #2eb872;
   color: #ffffff !important;
-}
-
-.nothing {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-i,
-span {
-  display: inline-block;
 }
 
 /* ---------------------------------------------------
@@ -266,6 +266,13 @@ a[data-toggle="collapse"] {
 /* ------------------------------
 ----------- BUTTONS -------------
 --------------------------------- */
+/* Remove Backgound from default Buttons */
+.nothing {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .ebtn, .ebtnSecond, .ebtnSuccess, .ebtnDanger {
   background: #3498db;
   padding: 5px 40px;
@@ -306,11 +313,11 @@ a[data-toggle="collapse"] {
 }
 
 .ebtnDanger {
-  background: #f33535;
+  background: #FF3838;
 }
 
 .ebtnDanger:hover {
-  background: #cf0c0c;
+  background: #eb0000;
   -webkit-box-shadow: 0px 1px 5px #bdbdbd;
           box-shadow: 0px 1px 5px #bdbdbd;
 }

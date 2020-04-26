@@ -11,7 +11,7 @@ $secondary: #FACF5A;
 $success: #2eb872;
 $info: #495BFC;
 $warning: #FF9D00;
-$danger: #f33535;
+$danger: #FF3838;
 $bg: #f3f3f3;
 
 /* Text Color Variations */
@@ -51,6 +51,17 @@ a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
+}
+
+.nothing {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+i,
+span {
+    display: inline-block;
 }
 
 .eCard {

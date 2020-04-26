@@ -2,6 +2,14 @@
 ----------- BUTTONS -------------
 --------------------------------- */
 
+/* Remove Backgound from default Buttons */
+
+.nothing {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .ebtn {
     background: $primary;
     padding: 5px 40px;
