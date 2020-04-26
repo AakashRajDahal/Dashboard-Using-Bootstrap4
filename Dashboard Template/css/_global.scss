@@ -1,0 +1,69 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro&display=swap');
+
+/* ------------------------------------------
+---------------COLORS------------------------
+--------------------------------------------- */
+
+/* Main Colors */
+$primary: #1473e6;
+$secondary: #FACF5A;
+$success: #2CD65A;
+$info: #495BFC;
+$warning: #FF9D00;
+$danger: #FF3838;
+$bg: #f3f3f3;
+
+/* Text Color Variations */
+$black: #000000;
+$sblack: #444444;
+$grey: #929292;
+$silver: #e3e3e3;
+$white: #ffffff;
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: $bg;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Nunito;
+    font-weight: 600;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.eCard {
+    padding: 40px;
+    background-color: $white;
+    box-shadow: 0px 3px 15px $silver;
+    border-radius: 10px;
+
+}
+
+.eCardSuccess {
+    @extend .eCard;
+    background-color: $success;
+    color: $white !important;
+
+}

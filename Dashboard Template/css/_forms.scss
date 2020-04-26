@@ -1,0 +1,59 @@
+/* ------------------------------
+----------- BUTTONS -------------
+--------------------------------- */
+
+.ebtn {
+    background: $primary;
+    padding: 5px 40px;
+    color: $white;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.1s;
+    font-weight: 600;
+
+    &:hover {
+        background: darken($primary, 10%);
+        box-shadow: 0px 1px 5px darken($silver, 10%);
+    }
+}
+
+.ebtnSecond {
+    @extend .ebtn;
+    background: $secondary;
+    color: $sblack;
+
+    &:hover {
+        background: darken($secondary, 10%);
+        box-shadow: 0px 1px 5px darken($silver, 10%);
+    }
+}
+
+.ebtnSuccess {
+    @extend .ebtn;
+    background: $success;
+
+    &:hover {
+        background: darken($success, 10%);
+        box-shadow: 0px 1px 5px darken($silver, 10%);
+    }
+}
+
+.ebtnDanger {
+    @extend .ebtn;
+    background: $danger;
+
+    &:hover {
+        background: darken($danger, 15%);
+        box-shadow: 0px 1px 5px darken($silver, 15%);
+    }
+}
+
+
+/* -------------------------------------
+-------------- INPUTS ------------------
+----------------------------------------*/
+.boxee {
+    height: 48px;
+    padding: 5px 20px;
+}

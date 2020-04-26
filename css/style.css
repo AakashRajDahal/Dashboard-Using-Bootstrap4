@@ -1,0 +1,312 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro&display=swap");
+/* ------------------------------------------
+---------------COLORS------------------------
+--------------------------------------------- */
+/* Main Colors */
+/* Text Color Variations */
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Nunito;
+  font-weight: 600;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.eCard, .eCardSuccess {
+  padding: 40px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 3px 15px #e3e3e3;
+          box-shadow: 0px 3px 15px #e3e3e3;
+  border-radius: 10px;
+}
+
+.eCardSuccess {
+  background-color: #2CD65A;
+  color: #ffffff !important;
+}
+
+.navbar {
+  padding: 20px 0px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.nothing {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+i,
+span {
+  display: inline-block;
+}
+
+/* ---------------------------------------------------
+        SIDEBAR STYLE
+    ----------------------------------------------------- */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #ffffff;
+  color: #444444;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 3px 0px 15px #e3e3e3;
+          box-shadow: 3px 0px 15px #e3e3e3;
+}
+
+.sidebar.active {
+  min-width: 80px;
+  max-width: 80px;
+  text-align: center;
+}
+
+.sidebar.active .sidebar-header h3,
+.sidebar.active .CTAs,
+.sidebar.active .textLink {
+  display: none;
+}
+
+.sidebar.active .sidebar-header strong {
+  display: block;
+}
+
+.sidebar ul li a {
+  text-align: left;
+}
+
+.sidebar.active ul li a {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+.sidebar.active ul li a i {
+  margin-right: 0;
+  display: block;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.sidebar.active ul ul a {
+  padding: 10px !important;
+}
+
+.sidebar.active .dropdown-toggle::after {
+  top: auto;
+  bottom: 10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.sidebar .sidebar-header {
+  background: #1473e6;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.sidebar .sidebar-header strong {
+  display: none;
+  font-size: 1.8em;
+}
+
+.sidebar ul.components {
+  padding: 20px 10px;
+  color: #929292;
+  font-weight: 500;
+}
+
+.sidebar ul li a {
+  padding: 15px;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  color: #1473e6;
+  background: #ffffff;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.sidebar ul li.active > a {
+  color: #1473e6;
+}
+
+a[aria-expanded="true"] {
+  color: #1473e6;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* ---------------------------------------------------
+        CONTENT STYLE
+    ----------------------------------------------------- */
+.content {
+  width: 100%;
+  padding: 0px 60px;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+        MEDIAQUERIES
+    ----------------------------------------------------- */
+@media (max-width: 768px) {
+  .sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    margin-left: -80px !important;
+  }
+  .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  .sidebar {
+    margin-left: 0;
+  }
+  .sidebar.active {
+    margin-left: 0 !important;
+  }
+  .sidebar .sidebar-header h3,
+  .sidebar .CTAs {
+    display: none;
+  }
+  .sidebar .sidebar-header strong {
+    display: block;
+  }
+  .sidebar ul li a {
+    padding: 20px 10px;
+  }
+  .sidebar ul li a span {
+    font-size: 0.85em;
+  }
+  .sidebar ul li a i {
+    margin-right: 0;
+    display: block;
+  }
+  .sidebar ul ul a {
+    padding: 10px !important;
+  }
+  .sidebar ul li a i {
+    font-size: 1.3em;
+  }
+  .sidebarCollapse span {
+    display: none;
+  }
+}
+
+/* ------------------------------
+----------- BUTTONS -------------
+--------------------------------- */
+.ebtn, .ebtnSecond, .ebtnSuccess, .ebtnDanger {
+  background: #1473e6;
+  padding: 5px 40px;
+  color: #ffffff;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-weight: 600;
+}
+
+.ebtn:hover, .ebtnSecond:hover, .ebtnSuccess:hover, .ebtnDanger:hover {
+  background: #105cb7;
+  -webkit-box-shadow: 0px 1px 5px #cacaca;
+          box-shadow: 0px 1px 5px #cacaca;
+}
+
+.ebtnSecond {
+  background: #FACF5A;
+  color: #444444;
+}
+
+.ebtnSecond:hover {
+  background: #f9c129;
+  -webkit-box-shadow: 0px 1px 5px #cacaca;
+          box-shadow: 0px 1px 5px #cacaca;
+}
+
+.ebtnSuccess {
+  background: #2CD65A;
+}
+
+.ebtnSuccess:hover {
+  background: #22ad47;
+  -webkit-box-shadow: 0px 1px 5px #cacaca;
+          box-shadow: 0px 1px 5px #cacaca;
+}
+
+.ebtnDanger {
+  background: #FF3838;
+}
+
+.ebtnDanger:hover {
+  background: #eb0000;
+  -webkit-box-shadow: 0px 1px 5px #bdbdbd;
+          box-shadow: 0px 1px 5px #bdbdbd;
+}
+
+/* -------------------------------------
+-------------- INPUTS ------------------
+----------------------------------------*/
+.boxee {
+  height: 48px;
+  padding: 5px 20px;
+}
+/*# sourceMappingURL=style.css.map */
