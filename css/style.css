@@ -106,10 +106,15 @@ span {
   text-align: left;
 }
 
+.sidebar .expanded {
+  margin-left: 2.5em;
+  font-size: 0.8em;
+}
+
 .sidebar.active ul li a {
   padding: 20px 10px;
   text-align: center;
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
 .sidebar.active ul li a i {
@@ -131,6 +136,11 @@ span {
   transform: translateX(50%);
 }
 
+.sidebar.active .expanded {
+  margin-left: 0em;
+  font-size: 0.8em;
+}
+
 .sidebar .sidebar-header {
   background: #3498db;
   color: #ffffff;
@@ -150,7 +160,7 @@ span {
 
 .sidebar ul li a {
   padding: 15px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: block;
 }
 

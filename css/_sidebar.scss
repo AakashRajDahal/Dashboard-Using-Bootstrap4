@@ -36,12 +36,17 @@
         text-align: left;
     }
 
+    .expanded {
+        margin-left: 2.5em;
+        font-size: 0.8em;
+    }
+
     &.active {
         ul {
             li a {
                 padding: 20px 10px;
                 text-align: center;
-                font-size: 0.85em;
+                font-size: 0.9em;
 
                 i {
                     margin-right: 0;
@@ -63,6 +68,11 @@
             -webkit-transform: translateX(50%);
             -ms-transform: translateX(50%);
             transform: translateX(50%);
+        }
+
+        .expanded {
+            margin-left: 0em;
+            font-size: 0.8em;
         }
     }
 
@@ -87,7 +97,7 @@
         li {
             a {
                 padding: 15px;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 display: block;
 
                 &:hover {
