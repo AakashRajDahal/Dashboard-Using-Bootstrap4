@@ -47,13 +47,8 @@ a:focus {
 }
 
 .eCardSuccess {
-  background-color: #2CD65A;
+  background-color: #2eb872;
   color: #ffffff !important;
-}
-
-.navbar {
-  padding: 20px 0px;
-  border-bottom: 1px solid #e3e3e3;
 }
 
 .nothing {
@@ -88,6 +83,7 @@ span {
   transition: all 0.3s;
   -webkit-box-shadow: 3px 0px 15px #e3e3e3;
           box-shadow: 3px 0px 15px #e3e3e3;
+  z-index: 999;
 }
 
 .sidebar.active {
@@ -136,7 +132,7 @@ span {
 }
 
 .sidebar .sidebar-header {
-  background: #1473e6;
+  background: #3498db;
   color: #ffffff;
   padding: 60px 20px;
 }
@@ -159,7 +155,7 @@ span {
 }
 
 .sidebar ul li a:hover {
-  color: #1473e6;
+  color: #3498db;
   background: #ffffff;
 }
 
@@ -168,11 +164,11 @@ span {
 }
 
 .sidebar ul li.active > a {
-  color: #1473e6;
+  color: #3498db;
 }
 
 a[aria-expanded="true"] {
-  color: #1473e6;
+  color: #3498db;
 }
 
 a[data-toggle="collapse"] {
@@ -191,12 +187,24 @@ a[data-toggle="collapse"] {
 /* ---------------------------------------------------
         CONTENT STYLE
     ----------------------------------------------------- */
+/* Navigation Bar */
+.navbar {
+  padding: 20px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.profilePicture {
+  width: 36px;
+  border-radius: 100px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
 .content {
   width: 100%;
-  padding: 0px 60px;
+  position: relative;
+  padding: 0px 40px;
   min-height: 100vh;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 /* ---------------------------------------------------
@@ -221,6 +229,11 @@ a[data-toggle="collapse"] {
   }
   .sidebar.active {
     margin-left: 0 !important;
+  }
+  .sidebar .sidebar-header h3,
+  .sidebar .CTAs,
+  .sidebar .textLink {
+    display: none;
   }
   .sidebar .sidebar-header h3,
   .sidebar .CTAs {
@@ -254,7 +267,7 @@ a[data-toggle="collapse"] {
 ----------- BUTTONS -------------
 --------------------------------- */
 .ebtn, .ebtnSecond, .ebtnSuccess, .ebtnDanger {
-  background: #1473e6;
+  background: #3498db;
   padding: 5px 40px;
   color: #ffffff;
   height: 48px;
@@ -266,7 +279,7 @@ a[data-toggle="collapse"] {
 }
 
 .ebtn:hover, .ebtnSecond:hover, .ebtnSuccess:hover, .ebtnDanger:hover {
-  background: #105cb7;
+  background: #217dbb;
   -webkit-box-shadow: 0px 1px 5px #cacaca;
           box-shadow: 0px 1px 5px #cacaca;
 }
@@ -283,21 +296,21 @@ a[data-toggle="collapse"] {
 }
 
 .ebtnSuccess {
-  background: #2CD65A;
+  background: #2eb872;
 }
 
 .ebtnSuccess:hover {
-  background: #22ad47;
+  background: #248f59;
   -webkit-box-shadow: 0px 1px 5px #cacaca;
           box-shadow: 0px 1px 5px #cacaca;
 }
 
 .ebtnDanger {
-  background: #FF3838;
+  background: #f33535;
 }
 
 .ebtnDanger:hover {
-  background: #eb0000;
+  background: #cf0c0c;
   -webkit-box-shadow: 0px 1px 5px #bdbdbd;
           box-shadow: 0px 1px 5px #bdbdbd;
 }
