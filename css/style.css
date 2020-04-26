@@ -386,4 +386,34 @@ a[data-toggle="collapse"] {
   font-size: 1.5em;
   margin-top: 0.5em;
 }
+
+/* Equal Columns for Bootstrap */
+.row.equal-cols {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row.equal-cols:before,
+.row.equal-cols:after {
+  display: block;
+}
+
+.row.equal-cols > [class*='col-'] {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.row.equal-cols > [class*='col-'] > * {
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+}
 /*# sourceMappingURL=style.css.map */
